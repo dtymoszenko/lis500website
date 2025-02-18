@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Starting Website</title>
-</head>
-<body>
- <h1>This is our new website for project 2... testing</h1>
- <h2>does this update website</h2>
- 
-</body>
+  <head>
+    <!-- Link to unique font called Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Name of tab as it appears above search bar -->
+    <title>Project #2 LIS 500 (Homepage)</title>
+    <!-- Link to CSS styles page -->
+    <link rel="stylesheet" href="stylepage.css" />
+  </head>
+
+  <body>
+    <!-- mainText class to customize the header of each page (color) -->
+    <header class="mainText">
+      <!-- Description of what page user is on -->
+      <h1>Homepage Section</h1>
+    </header>
+    <!-- The navigator bar at the top of each screen (named based on canvas requirements) -->
+    <nav class="navigator">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="techhero.html">Tech Hero</a></li>
+      </ul>
+    </nav>
+
+    <!-- Large content section which has all the text and information on this page-->
+    <main class="content">
+      <!-- Technology header, description of website-->
+      <h2 class="techTitle">Technology and the World</h2>
+      <p>
+        Our website will talk about many topics, including intersectionality,
+        bias, and other fascinating tech topics!
+      </p>
+      <!--Describing contents of each tab in the navigator -->
+      <h2 class="contentTitle">Website Content</h2>
+      <ul>
+        <li>
+          <!--Strong used for bold effect -->
+          <strong>About us: </strong> You will learn information about the
+          creators of this website (David Tymoszenko and Cy Gleason).
+        </li>
+        <li>
+          <strong>Exploring Bias:</strong> A deep dive into the unseen biases
+          influencing technology and decision-making.
+        </li>
+        <li>
+          <strong>Tech Visionary:</strong> Highlighting a trailblazer who is
+          redefining the boundaries of innovation.
+        </li>
+      </ul>
+      <!-- Image at bottom of screen, including alt tag in case it doesn't load for some reason (accessibility)-->
+      <!-- Used css here for styling/formatting -->
+      <img
+        src="binaryimg.jpg"
+        alt="Picture of binary numbers (0 and 1s) on a blue background"
+      />
+    </main>
+
+    <!-- Footer for page which says creator of website, where we go to school, and what course this is for-->
+    <footer class="footer">
+      <p>
+        David Tymoszenko and Cy Gleason Project #2 2025 - LIS 500 Code and Power
+        - University of Wisconsin-Madison
+      </p>
+    </footer>
+  </body>
 </html>
