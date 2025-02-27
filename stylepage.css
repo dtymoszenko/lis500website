@@ -1,30 +1,81 @@
+/* Section for setting the text font and way it is put on website */
 body {
   text-align: center;
   font-family: "Nunito";
 }
 
+/* The color scheme of the website for text*/
 .mainText {
   color: #005f6b;
 }
 
+/* Aligning the title to be in the middle of the page */
 .techTitle {
   text-align: center;
 }
 
+/* Doing the same with the resources, aligning to center */
 .resourcesLinks {
   text-align: center;
 }
 
+/*  */
+.homeImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CSS styling to make the titles and additional info section correct color and centered*/
 .heroTitle {
   text-align: center;
   color: #005f6b;
 }
 
-.heroImg {
-  height: 350px;
-  width: 300px;
+.additionalInfo {
+  text-align: center;
+  color: #005f6b;
 }
 
+/* Making the links colored and underlined with margin to make them more visible and apparent what they are */
+.resourcesLinks a {
+  text-decoration: underline;
+  margin-bottom: 8px;
+  color: #005f6b;
+}
+
+.articlesSection a {
+  text-decoration: underline;
+  margin-bottom: 8px;
+  color: #005f6b;
+}
+
+/* Changed height and width here so that the image isn't skewed (feedback project 1), image looks much better now of Anu*/
+.heroImg {
+  height: auto;
+  width: 400px;
+  margin-right: 20px;
+  float: right;
+  /* height: 350px;
+  width: 300px; */
+}
+
+.resourcesPic {
+  height: auto;
+  width: 400px;
+  float: right;
+}
+
+/* Newly added container which makes the image and text align and also centered and wrap instead of going too far across screen*/
+.heroContainer {
+  display: flex;
+}
+
+.intersectionalityContainer {
+  display: flex;
+}
+
+/*Ensuring text on our hero page wraps properly and the text is aligned to the left and correct color*/
 .heroText {
   max-width: 600px;
   margin: auto;
@@ -43,6 +94,7 @@ body {
   text-align: center;
 }
 
+/*Ensuring resources section wraps properly and the text is aligned to the left and correct color*/
 .biasDefinition {
   max-width: 600px;
   margin: auto;
@@ -52,6 +104,7 @@ body {
   color: #005f6b;
 }
 
+/*Ensuring articles section wraps properly and the text is aligned to the left and correct color*/
 .articlesSection {
   max-width: 600px;
   margin: auto;
@@ -61,30 +114,38 @@ body {
   color: #005f6b;
 }
 
+/*Styling for pictures on about us section*/
 .descriptionImg {
-  margin-top: 20px;
   height: 300px;
-  width: 250px;
+  width: auto;
 }
 
+.descriptionTwoImg {
+  height: 300px;
+  width: auto;
+}
+
+/* Setting up the navbar on top of each screen section, changed from first draft to second by making smaller and less prevalent on each page. Also made a larger margin than first project */
 .navigator {
   background-color: #005f6b;
-  padding: 16px;
+  padding: 1px;
   justify-content: center;
   text-align: center;
-  margin-bottom: 1%;
+  margin-bottom: 15px;
 }
 
+/* Design code to make margin between text on navbar and make it show up horizontally instead of vertically */
 .navigator ul li {
   margin: 17px;
   display: inline;
 }
 
+/* Styling for text in navbar, getting rid of underline and creating some padding */
 .navigator ul li a {
   display: inline;
   color: #ff6b3d;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   padding-top: 10px;
   padding-right: 15px;
@@ -92,11 +153,13 @@ body {
   padding-left: 15px;
 }
 
+/* Hover effect for navbar which makes it more responsive to user and easier to know where you are navigating to*/
 .navigator ul li a:hover {
   color: #ffffff;
   background-color: #ff6b3d;
 }
 
+/*Ensuring proper padding around and color, as well as center justification*/
 .content {
   color: #005f6b;
   text-align: center;
@@ -118,6 +181,14 @@ body {
   display: inline-block;
 }
 
+/*Styling for images on the about us page*/
+.bookImg {
+  float: right;
+  height: auto;
+  width: 200px;
+}
+
+/*More text styling in terms of wrapping and color and alignment*/
 .descriptions {
   max-width: 600px;
   margin: auto;
@@ -131,6 +202,7 @@ body {
   color: #005f6b;
 }
 
+/* Footer that is present at bottom of every single page */
 .footer {
   text-align: center;
   background-color: #005f6b;
