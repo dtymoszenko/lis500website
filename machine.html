@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Outside link to Nunito Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Name of tab as it appears above search bar -->
+    <title>Project #2 LIS 500 (Tech Hero Section)</title>
+    <!-- Link to CSS styles page -->
+    <link rel="stylesheet" href="stylepage.css" />
+  </head>
+  <body>
+    <header class="mainText">
+      <h1>Maching Learning (Project 3)</h1>
+    </header>
+    <!-- The navigator bar at the top of each screen (named based on canvas requirements) -->
+    <nav class="navigator">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="techhero.html">Tech Hero</a></li>
+        <li><a href="machine.html">Machine Learning</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section to talk about our project and 'Unmasking AI' -->
+    <h3>'Unmasking AI' and our Project</h3>
+    <p class="heroText">
+      As we began working on this project, we made sure to have various themes
+      from the text titled Unmasking AI: My Mission to Protect What is Human in
+      a World of Machines by Dr. Joy Buolamwini in mind. Dr. Joy Buolamwini’s
+      story taught us about how technology interacts with our fragile social
+      structures and ideals. Her work emphasized a rejection of the norm and a
+      willingness to question the status quo. In beginning this project, we made
+      sure to adhere to Dr Buolamwini’s philosophy and label our data based on
+      what we believed objectively represented each category.
+    </p>
+    <br />
+    <p class="heroText">
+      The extra attention we paid to making sure that every data input we gave
+      the machine was as impartial and accurate as possible is the result of the
+      awareness we gained by reading Dr Buolamwini’s work. We know that if the
+      data that is being given to a machine carries implicit biases, the machine
+      will inherit those same biases. This can have palpable negative impacts on
+      certain groups who were underrepresented in the data used to train the
+      machine. In Unmasking AI, Dr Buolamwini discovered that her face was not
+      being recognized by facial recognition technology because the technology
+      had been trained using data in which her demographic was underrepresented.
+      She referred to this phenomenon as the coded gaze, defined as “The
+      preferences of those who have the power to choose what subjects to focus
+      on.” (Buolamwini 51)
+    </p>
+    <br />
+    <p class="heroText">
+      In our project we acted as the masters of our own coded gaze. We held the
+      sole power to determine what qualified as a certain amount of fingers just
+      like the so-called coded gaze has the power to determine what data sets
+      inform machine learning models. The power we have to determine what data
+      is used to inform our machine is not comparable to the power of others who
+      are labeling data for more important sets of information. Despite the
+      differences in the importance of the data, the principle laid out by Dr
+      Buolamwini still holds true. No matter how insignificant the data being
+      labeled is, it is never neutral because, as Dr Buolamwini says,
+      “Classification systems do not come out of nowhere.” (Buolamwini 81)
+    </p>
+    <br />
+    <p class="heroText">
+      As we began to test our machine by holding up different numbers of
+      fingers, we saw the model respond with varying levels of success. When we
+      gave the machine a specific input that it was prepared for, holding up a
+      specific number of fingers, we experienced a true positive. However when
+      we showed the machine other parts of our arms it was still required to
+      classify the images. This led to significant decreases in accuracy. We had
+      created a system where only four categories existed, therefore the machine
+      could only use four labels. Dr Buolamwini detailed an opposite phenomenon
+      in Unmasking AI. If the facial recognition technology was only trained on
+      data that classified certain faces, when it was presented with a face it
+      did not recognize it would fail to classify it all together, rather than
+      classifying it as a false face.
+    </p>
+
+    <!-- Section to talk about Producing Algorithm -->
+    <h3>Producing Our Algorithm and Project</h3>
+    <p class="heroText">
+      The idea that we decided we wanted to teach a Teachable Machine was how
+      many numbers we were holding up with our fingers. We thought that this was
+      a great idea because anyone who had their webcam on would be able to
+      quickly change the number of fingers they are holding up and test if our
+      algorithm was working properly or not. Instead of requiring props or other
+      images, we thought it would be pretty easy for anyone to test out at any
+      time.
+    </p>
+    <br />
+    <p class="heroText">
+      Originally, we wanted to do 0-5 fingers for a total of 6 classes for 0-5
+      fingers being held up. We initially loaded up our classes by putting 1000
+      pictures in each class. Once we had all of the pictures setup, we decided
+      to try to run our machine, and found that it took several minutes to
+      simply compile and create the model. This was extremely inefficient, and
+      we realized that we were feeding too much data. To combat this, we lowered
+      the number to around 500. When we did this, we still ran into a lot of
+      trouble with runtime because we were still using way too much data.
+      Additionally, due to there being a total of 6 classes our machine was not
+      the most accurate which was frustrating to try to fix. We also ran into
+      problems with the way numbers were being held up with fingers. Some people
+      represent a number like three on their fingers in different ways, eg: hold
+      up different fingers, rotate hands a different way, etc. It was very
+      difficult to make our model accurately showcase this, which is something
+      we need to improve on in the future.
+    </p>
+    <br />
+    <p class="heroText">
+      After trial and error, we decided to reduce some complexity. We instead
+      did 0-3 fingers to only make it 4 classes. This is so that our machine
+      would be easier to train and simpler for users to use. Also, we found that
+      the sweet spot for the number of data for the amount of classes we had was
+      around 100 pictures. After we took these 100 pictures, we finally trained
+      our model again and it ran efficiently and relatively accurately. Below is
+      a picture of the class setup that we implemented. It is pretty simple, but
+      we wanted to showcase the power of Teachable Machine and how it can
+      quickly recognize different images, and we thought throwing up different
+      numbers of fingers would accurately be able to represent that.
+    </p>
+    <!-- Picure which represents how we trained out model and got it to work -->
+    <img
+      class="teachPic"
+      src="teachablemachine.JPG"
+      alt="Picture of classes used to train machine learning program"
+    />
+    <br />
+
+    <h3>Here is a video which showcases us using our Teachable Machine:</h3>
+    <!-- Video iframe copy and pasted from youtube video that was created -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/I_JByilYixk?si=a-Cv2OpNIN5OL8ut"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <br />
+
+    <p class="heroText">
+      As can be seen, our Teachable Machine is not quite perfect yet. There are
+      still some problems with some overcompensation for the value 3, and it is
+      a bit difficult to understand why. In our future checkpoints for this
+      project, we hope to resolve this and make our model more accurate. For
+      now, we are pleased with the progress we have made in efficiency and
+      runtime, and it is interesting to see a decently accurate AI recognizing
+      the amount of fingers we are holding up!
+    </p>
+
+    <!-- Section to display code/github -->
+    <h3>
+      Look at our code for this project:
+      <a href="https://github.com/dtymoszenko/lis500website">Github Link</a>
+    </h3>
+  </body>
+
+  <!-- Footer for page which says creator of website, where we go to school, and what course this is for-->
+  <footer class="footer">
+    <p>
+      David Tymoszenko and Cy Gleason Project #3 2025 - LIS 500 Code and Power -
+      University of Wisconsin-Madison
+    </p>
+  </footer>
+</html>
