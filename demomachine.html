@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Outside link to Nunito Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Name of tab as it appears above search bar -->
+    <title>Project #2 LIS 500 (ML Section)</title>
+    <!-- Link to CSS styles page -->
+    <link rel="stylesheet" href="stylepage.css" />
+  </head>
+  <body>
+    <header class="mainText">
+      <h1>Maching Learning (Project 3)</h1>
+    </header>
+    <!-- The navigator bar at the top of each screen (named based on canvas requirements) -->
+    <nav class="navigator">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="techhero.html">Tech Hero</a></li>
+        <li><a href="machine.html">Machine Learning</a></li>
+        <li><a href="demomachine.html">Try Our Model!</a></li>
+      </ul>
+    </nav>
+
+    <h3>Here is a video which showcases us using our Teachable Machine:</h3>
+    <!-- Video iframe copy and pasted from youtube video that was created -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/I_JByilYixk?si=a-Cv2OpNIN5OL8ut"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <br />
+    <!-- Original text section displaying downfalls of model -->
+    <p class="heroText">
+      As can be seen, our Teachable Machine is not quite perfect yet. There are
+      still some problems with some overcompensation for the value 3, and it is
+      a bit difficult to understand why. In our future checkpoints for this
+      project, we hope to resolve this and make our model more accurate. For
+      now, we are pleased with the progress we have made in efficiency and
+      runtime, and it is interesting to see a decently accurate AI recognizing
+      the amount of fingers we are holding up!
+    </p>
+    <br />
+
+    <!-- New Update to project and how we got it to be more accurate.-->
+    <h3>Update: Final Project</h3>
+    <p class="heroText">
+      Since the first checkpoint, we revised our machine learning model on
+      Teachable Machine. Since we only used the images on teachable machine,
+      they are not included in the GitHub. However, the update which we did was
+      focused on including a more well-rounded database of pictures. Before,
+      most of the pictures were stagnant and all of them included our space. We
+      fixed this by holding up fingers from a varied distance, some including
+      our face, and some not. This variance in a our data resulted in a much
+      more accurate model, and we are proud of the improvement we made! Please
+      look below to learn more!!
+    </p>
+
+    <!-- Picture of model working properly with 1 finger being recognized -->
+    <img
+      class="oneFinger"
+      src="onefinger.JPG"
+      alt="Picture of Model working properly, with one finger being held up and 100% accuracy of 1 finger"
+    />
+
+    <!-- Section to display code/github -->
+    <h3>
+      Look at our code for this project:
+      <a target="_blank" href="https://github.com/dtymoszenko/lis500website"
+        >Github Link</a
+      >
+    </h3>
+    <h3>
+      To try our project on your own:
+      <a
+        target="_blank"
+        href="https://teachablemachine.withgoogle.com/models/SPrgioTS0/"
+        >Teachable Machine Link</a
+      >
+    </h3>
+  </body>
+
+  <!-- Footer for page which says creator of website, where we go to school, and what course this is for-->
+  <footer class="footer">
+    <p>
+      David Tymoszenko and Cy Gleason Project #3 2025 - LIS 500 Code and Power -
+      University of Wisconsin-Madison
+    </p>
+  </footer>
+</html>

@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <!-- Name of tab as it appears above search bar -->
-    <title>Project #2 LIS 500 (Tech Hero Section)</title>
+    <title>Project #2 LIS 500 (ML Section)</title>
     <!-- Link to CSS styles page -->
     <link rel="stylesheet" href="stylepage.css" />
   </head>
@@ -27,11 +27,12 @@
         <li><a href="resources.html">Resources</a></li>
         <li><a href="techhero.html">Tech Hero</a></li>
         <li><a href="machine.html">Machine Learning</a></li>
+        <li><a href="demomachine.html">Try Our Model!</a></li>
       </ul>
     </nav>
 
     <!-- Section to talk about our project and 'Unmasking AI' -->
-    <h3>'Unmasking AI' and our Project</h3>
+    <h3>Reflections On Our Project & Unmasking AI by Joy Bolumawani</h3>
     <p class="heroText">
       As we began working on this project, we made sure to have various themes
       from the text titled Unmasking AI: My Mission to Protect What is Human in
@@ -57,6 +58,11 @@
       preferences of those who have the power to choose what subjects to focus
       on.” (Buolamwini 51)
     </p>
+    <img
+      class="unmaskingImg"
+      src="unmaskingAI.jfif"
+      alt="Cover of Unmasking AI by Joy Buolamwini"
+    />
     <br />
     <p class="heroText">
       In our project we acted as the masters of our own coded gaze. We held the
@@ -70,6 +76,7 @@
       labeled is, it is never neutral because, as Dr Buolamwini says,
       “Classification systems do not come out of nowhere.” (Buolamwini 81)
     </p>
+
     <br />
     <p class="heroText">
       As we began to test our machine by holding up different numbers of
@@ -87,7 +94,7 @@
     </p>
 
     <!-- Section to talk about Producing Algorithm -->
-    <h3>Producing Our Algorithm and Project</h3>
+    <h3>Project Statement</h3>
     <p class="heroText">
       The idea that we decided we wanted to teach a Teachable Machine was how
       many numbers we were holding up with our fingers. We thought that this was
@@ -96,6 +103,22 @@
       algorithm was working properly or not. Instead of requiring props or other
       images, we thought it would be pretty easy for anyone to test out at any
       time.
+    </p>
+    <br />
+    <!-- Picure which represents how we trained out model and got it to work -->
+    <img
+      class="teachPic"
+      src="teachablemachine.JPG"
+      alt="Picture of classes used to train machine learning program"
+    />
+
+    <p class="heroText">
+      To overview our project, we created a Teachable Machine project which
+      recognizes how many fingers are held up on one hand. Our model allows a
+      user to hold up fingers in the range of 0 to 3, and the machine will
+      quickly recognize how many fingers you are displaying. We tried to allow
+      this to occur from a variance of ranges, but found that the model was most
+      accurate when fingers are displayed closer to the webcam.
     </p>
     <br />
     <p class="heroText">
@@ -113,7 +136,8 @@
       represent a number like three on their fingers in different ways, eg: hold
       up different fingers, rotate hands a different way, etc. It was very
       difficult to make our model accurately showcase this, which is something
-      we need to improve on in the future.
+      we need to improve on in the future. (UPDATE: We did this with our new
+      model by including more varied images in our Final Project).
     </p>
     <br />
     <p class="heroText">
@@ -128,43 +152,21 @@
       quickly recognize different images, and we thought throwing up different
       numbers of fingers would accurately be able to represent that.
     </p>
-    <!-- Picure which represents how we trained out model and got it to work -->
-    <img
-      class="teachPic"
-      src="teachablemachine.JPG"
-      alt="Picture of classes used to train machine learning program"
-    />
-    <br />
-
-    <h3>Here is a video which showcases us using our Teachable Machine:</h3>
-    <!-- Video iframe copy and pasted from youtube video that was created -->
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/I_JByilYixk?si=a-Cv2OpNIN5OL8ut"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-    <br />
-    <br />
 
     <p class="heroText">
-      As can be seen, our Teachable Machine is not quite perfect yet. There are
-      still some problems with some overcompensation for the value 3, and it is
-      a bit difficult to understand why. In our future checkpoints for this
-      project, we hope to resolve this and make our model more accurate. For
-      now, we are pleased with the progress we have made in efficiency and
-      runtime, and it is interesting to see a decently accurate AI recognizing
-      the amount of fingers we are holding up!
+      For our final iteration in this project, we made our model much more
+      accurate, which is described on the next tab titled "Try our Model!".
+      Essentially, we changed the data that was provided by going above 100 to
+      around 400. We thought the sweet spot was 100 originally, but when testing
+      with other people we found that our model wasn't accurate. In other words,
+      with such little data, our model was effectively only working when we
+      tried it ourselves. We made lots of improvements, and realized that data
+      variance is important. Please feel free to read more!
     </p>
-
-    <!-- Section to display code/github -->
     <h3>
-      Look at our code for this project:
-      <a href="https://github.com/dtymoszenko/lis500website">Github Link</a>
+      <a href="demomachine.html"
+        >Go to the "Try Our Model!" Tab to Learn More</a
+      >
     </h3>
   </body>
 

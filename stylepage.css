@@ -20,7 +20,22 @@ body {
 }
 
 .teachPic {
+  float: right;
   width: 250px;
+  margin-left: 100px;
+}
+
+/* Displaying the book cover of Unmasking AI more to the right of the text  */
+.unmaskingImg {
+  float: right;
+  margin-left: 100px;
+  width: 200px;
+}
+
+/* Displaying the book cover of Unmasking AI more to the right of the text  */
+.oneFinger {
+  margin-left: 100px;
+  height: 300px;
 }
 
 /*  */
